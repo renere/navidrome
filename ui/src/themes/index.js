@@ -4,6 +4,7 @@ import ExtraDarkTheme from './extradark'
 import GreenTheme from './green'
 import SpotifyTheme from './spotify'
 import LigeraTheme from './ligera'
+import Unrepeatable from './unrepeatable'
 
 export default {
   // Classic default themes
@@ -15,4 +16,5 @@ export default {
   GreenTheme,
   LigeraTheme,
   SpotifyTheme,
+  Unrepeatable,
 }
