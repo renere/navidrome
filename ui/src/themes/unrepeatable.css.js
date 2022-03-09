@@ -24,6 +24,10 @@ module.exports = `
     color: #7aa0ec !important
 }
 
+.react-jinke-music-player-main .loading svg {
+    color: #7aa0ec !important
+}
+
 .react-jinke-music-player-main .music-player-panel {
     background-color: #2b3142;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);

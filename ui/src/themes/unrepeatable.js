@@ -103,12 +103,12 @@ export default {
     },
     MuiButton: {
       root: {
-        background: unrepeatable['500'],
+        background: 'rgba(0, 0, 0, 0)',
         color: '#fff',
         border: '1px solid transparent',
-        borderRadius: 500,
+        borderRadius: '0.5rem',
         '&:hover': {
-          background: `${unrepeatable['900']} !important`,
+          background: '#535e7e',
         },
       },
       textSecondary: {
@@ -180,9 +180,12 @@ export default {
       },
     },
     MuiChip: {
+      root: {
+        backgroundColor: '#535e7e',
+      },
       outlined: {
         backgroundColor: 'rgba(255, 255, 255, 0.8)',
-        color: '#31374b'
+        color: '#31374b',
       },
     },
     MuiCard: {
@@ -323,7 +326,8 @@ export default {
     RaList: {
       content: {
         backgroundColor: 'inherit',
-        boxShadow: '0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12)'
+        boxShadow:
+          '0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12)',
       },
     },
     RaListToolbar: {
@@ -349,7 +353,6 @@ export default {
         backgroundColor: '#535e7e',
       },
       button: {
-        backgroundColor: 'inherit',
         minWidth: 48,
         margin: '0 4px',
         border: 'none',
@@ -380,7 +383,7 @@ export default {
     },
     makeStyles: {
       cover: {
-        "& > $item": {
+        '& > $item': {
           borderRadius: '.5rem',
         },
       },
