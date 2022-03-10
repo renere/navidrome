@@ -196,6 +196,7 @@ export default {
     MuiSelect: {
       select: {
         '&:focus': {
+          backgroundColor: '#3c455f',
           borderRadius: '.5rem',
         },
       },
@@ -203,6 +204,9 @@ export default {
     MuiListItem: {
       button: {
         transition: 'background-color .3s ease !important',
+        '&:hover': {
+          backgroundColor: '#363c52',
+        },
       },
     },
     NDAlbumGridView: {
