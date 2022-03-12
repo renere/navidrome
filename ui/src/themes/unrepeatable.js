@@ -344,17 +344,9 @@ export default {
     },
     RaList: {
       content: {
-        backgroundColor: 'rgb(54, 60, 82)',
-        backgroundImage:
-          'linear-gradient(0deg, rgba(54, 60, 82, 1) 0%, rgba(54, 60, 82, 1) 50%, rgba(43, 49, 66, 1) 50%, rgba(43, 49, 66, 1) 100%)',
+        backgroundColor: 'inherit',
         boxShadow:
           '0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12)',
-      },
-    },
-    RaDatagrid: {
-      headerRow: {
-        transform: 'translateY(-.25rem)',
-        borderBottom: 'solid 2px #31374b',
       },
     },
     RaListToolbar: {
@@ -407,7 +399,6 @@ export default {
       toolbar: {
         backgroundColor: '#535e7e',
         borderRadius: '.625rem',
-        marginBottom: '.625rem',
       },
     },
     RaSidebar: {
