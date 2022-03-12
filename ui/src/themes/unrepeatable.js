@@ -136,9 +136,8 @@ export default {
         padding: '10px 0',
         transition: 'background-color .3s ease',
         backgroundColor: '#31374b',
-        borderRadius: '.5rem',
         '&:hover': {
-          backgroundColor: 'rgba(43, 49, 66, 0.7) !important',
+          backgroundColor: '#2f3447 !important',
         },
         '@global': {
           'td:nth-child(4)': {
@@ -207,6 +206,22 @@ export default {
         '&:hover': {
           backgroundColor: '#363c52',
         },
+      },
+    },
+    MuiSwitch: {
+      switchBase: {
+        color: '#363c52',
+      },
+      track: {
+        width: '84%',
+        opacity: '1',
+        backgroundColor: '#535e7e',
+        scale: '140%',
+        transform: 'translateX(.1rem)',
+      },
+      thumb: {
+        scale: '60%',
+        boxShadow: 'none',
       },
     },
     NDAlbumGridView: {
@@ -329,9 +344,17 @@ export default {
     },
     RaList: {
       content: {
-        backgroundColor: 'inherit',
+        backgroundColor: 'rgb(54, 60, 82)',
+        backgroundImage:
+          'linear-gradient(0deg, rgba(54, 60, 82, 1) 0%, rgba(54, 60, 82, 1) 50%, rgba(43, 49, 66, 1) 50%, rgba(43, 49, 66, 1) 100%)',
         boxShadow:
           '0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12)',
+      },
+    },
+    RaDatagrid: {
+      headerRow: {
+        transform: 'translateY(-.25rem)',
+        borderBottom: 'solid 2px #31374b',
       },
     },
     RaListToolbar: {
@@ -378,6 +401,13 @@ export default {
             marginRight: 8,
           },
         },
+      },
+    },
+    RaBulkActionsToolbar: {
+      toolbar: {
+        backgroundColor: '#535e7e',
+        borderRadius: '.625rem',
+        marginBottom: '.625rem',
       },
     },
     RaSidebar: {

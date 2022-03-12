@@ -117,6 +117,14 @@ module.exports = `
     box-shadow:0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
 }
 
+.react-jinke-music-player-main .music-player-lyric {
+    color: #5e80c5;
+}
+
+.react-jinke-music-player-main .lyric-btn-active, .react-jinke-music-player-main .lyric-btn-active svg {
+    color: #5e80c5 !important;
+}
+
 /* Only works well when icons are replaced as in the Unrepeatable fork. */
 .react-jinke-music-player-main .music-player-panel .panel-content .player-content .next-audio svg, .react-jinke-music-player-main .music-player-panel .panel-content .player-content .prev-audio svg {
     font-size: 30px;
@@ -128,23 +136,48 @@ module.exports = `
 }
 
 
-
+.audio-lists-panel-header {
+    border-bottom:1px solid rgba(0, 0, 0, 0.25);
+    box-shadow:none;
+}
 
 .audio-lists-panel-content .audio-item.playing, .audio-lists-panel-content .audio-item.playing svg {
     color: #7aa0ec
 }
+
 .audio-lists-panel-content .audio-item:active .group:not([class=".player-delete"]) svg, .audio-lists-panel-content .audio-item:hover .group:not([class=".player-delete"]) svg {
     color: #7aa0ec
 }
 
-
-.react-jinke-music-player-main .music-player-lyric {
-    color: #5e80c5;
+.audio-lists-panel-content .audio-item .player-icons {
+    scale: 75%;
 }
 
-.react-jinke-music-player-main .lyric-btn-active, .react-jinke-music-player-main .lyric-btn-active svg {
-    color: #5e80c5 !important;
+.audio-lists-panel-content .audio-item:active,
+.audio-lists-panel-content .audio-item:hover {
+    background-color:#363c52;
 }
 
+/* Mobile */
+
+.react-jinke-music-player-mobile-cover {
+    border: none;
+    border-radius: 2.5rem;
+    box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+}
+
+.react-jinke-music-player .music-player-controller {
+    border: none;
+    box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+    color: #7aa0ec;
+}
+
+.react-jinke-music-player .music-player-controller .music-player-controller-setting {
+    color: rgba(122,160,236,.3);
+}
+
+.react-jinke-music-player-mobile-progress .rc-slider-handle, .react-jinke-music-player-mobile-progress .rc-slider-track {
+    background-color: #7aa0ec;
+}
 
 `
