@@ -117,6 +117,16 @@ module.exports = `
     box-shadow:0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
 }
 
+/* Only works well when icons are replaced as in the Unrepeatable fork. */
+.react-jinke-music-player-main .music-player-panel .panel-content .player-content .next-audio svg, .react-jinke-music-player-main .music-player-panel .panel-content .player-content .prev-audio svg {
+    font-size: 30px;
+}
+
+.player-content > span:nth-child(1) {
+    margin-right: 40px !important;
+    margin-left: -20px !important;
+}
+
 
 
 
