@@ -13,10 +13,11 @@ import { GlobalHotKeys } from 'react-hotkeys'
 import ReactJkMusicPlayer from 'react-jinke-music-player'
 import 'react-jinke-music-player/assets/index.css'
 import useCurrentTheme from '../themes/useCurrentTheme'
-import { FaPlay } from "react-icons/fa";
-import { FaPause } from "react-icons/fa";
-import { BsFillSkipStartFill } from "react-icons/bs";
-import { BsSkipEndFill } from "react-icons/bs";
+import { FaPlay } from 'react-icons/fa'
+import { FaPause } from 'react-icons/fa'
+import { BsFillSkipStartFill } from 'react-icons/bs'
+import { BsSkipEndFill } from 'react-icons/bs'
+import { IoMdTrash } from 'react-icons/io'
 import config from '../config'
 import useStyle from './styles'
 import AudioTitle from './AudioTitle'
@@ -85,6 +86,7 @@ const Player = () => {
         pause: <FaPause />,
         prev: <BsFillSkipStartFill />,
         next: <BsSkipEndFill />,
+        delete: <IoMdTrash />,
       },
     }),
     [isDesktop, playerTheme, translate]
