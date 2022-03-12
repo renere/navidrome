@@ -324,16 +324,28 @@ export default {
     },
     NDLogin: {
       main: {
-        boxShadow: 'inset 0 0 0 2000px rgba(0, 0, 0, .75)',
+        boxShadow: 'none',
       },
       systemNameLink: {
         color: '#fff',
       },
       card: {
-        border: '1px solid #282828',
+        border: 'none',
+        borderRadius: '1rem',
+        boxShadow:
+          '0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12)',
+        marginTop: '0',
+        position: 'absolute',
+        top: '50%',
+        transform: 'translateY(-50%)',
       },
       avatar: {
         marginBottom: 0,
+      },
+      icon: {
+        borderRadius: '50%',
+        boxShadow:
+          '0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12)',
       },
     },
     RaLayout: {
