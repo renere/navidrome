@@ -13,7 +13,7 @@ import (
 	"github.com/navidrome/navidrome/consts"
 	"github.com/navidrome/navidrome/model"
 	"github.com/navidrome/navidrome/tests"
-	. "github.com/onsi/ginkgo"
+	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 )
 
@@ -188,7 +188,7 @@ var _ = Describe("serveIndex", func() {
 		serveIndex(ds, fs)(w, r)
 
 		config := extractAppConfig(w.Body.String())
-		Expect(config).To(HaveKeyWithValue("version", consts.Version()))
+		Expect(config).To(HaveKeyWithValue("version", consts.Version))
 	})
 
 	It("sets the losslessFormats", func() {
