@@ -165,9 +165,9 @@ export default {
       },
     },
     MuiTablePagination: {
-        toolbar: {
-            borderTop: '1px solid #2b3142',
-        },
+      toolbar: {
+        borderTop: '1px solid #2b3142',
+      },
     },
     MuiAppBar: {
       positionFixed: {
@@ -372,19 +372,19 @@ export default {
       },
     },
     RaDatagrid: {
-        headerRow: {
-            '&:hover': {
-                backgroundColor: 'transparent !important',
-            },
+      headerRow: {
+        '&:hover': {
+          backgroundColor: 'transparent !important',
         },
-        headerCell: {
-            '&:first-child': {
-                borderTopLeftRadius: '.625rem !important',
-            },
-            '&:last-child': {
-                borderTopRightRadius: '.625rem !important',
-            },
+      },
+      headerCell: {
+        '&:first-child': {
+          borderTopLeftRadius: '.625rem !important',
         },
+        '&:last-child': {
+          borderTopRightRadius: '.625rem !important',
+        },
+      },
     },
     RaListToolbar: {
       toolbar: {
