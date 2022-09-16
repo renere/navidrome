@@ -5,6 +5,7 @@ import GreenTheme from './green'
 import SpotifyTheme from './spotify'
 import LigeraTheme from './ligera'
 import Unrepeatable from './unrepeatable'
+import MonokaiTheme from './monokai'
 
 export default {
   // Classic default themes
@@ -15,6 +16,7 @@ export default {
   ExtraDarkTheme,
   GreenTheme,
   LigeraTheme,
+  MonokaiTheme,
   SpotifyTheme,
   Unrepeatable,
 }

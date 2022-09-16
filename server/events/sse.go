@@ -65,7 +65,7 @@ type broker struct {
 }
 
 func GetBroker() Broker {
-	instance := singleton.Get(&broker{}, func() interface{} {
+	return singleton.GetInstance(func() *broker {
 		// Instantiate a broker
 		broker := &broker{
 			publish:       make(messageChan, 2),
@@ -77,8 +77,6 @@ func GetBroker() Broker {
 		go broker.listen()
 		return broker
 	})
-
-	return instance.(*broker)
 }
 
 func (b *broker) SendMessage(ctx context.Context, evt Event) {
@@ -214,7 +212,7 @@ func (b *broker) listen() {
 
 			// Send a serverStart event to new client
 			msg := b.prepareMessage(context.Background(),
-				&ServerStart{StartTime: consts.ServerStart, Version: consts.Version()})
+				&ServerStart{StartTime: consts.ServerStart, Version: consts.Version})
 			c.diode.put(msg)
 
 		case c := <-b.unsubscribing:
