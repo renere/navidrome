@@ -92,7 +92,9 @@ export default {
         fontSize: '0.875rem',
         paddingTop: '4px',
         paddingBottom: '4px',
-        margin: '3px',
+        paddingLeft: '10px',
+        margin: '6px',
+        minHeight: '3rem !important',
         borderRadius: '.5rem',
       },
     },
@@ -441,6 +443,11 @@ export default {
     RaSidebar: {
       root: {
         height: 'initial',
+      },
+    },
+    RaAppBar: {
+      title: {
+        visibility: 'hidden',
       },
     },
     makeStyles: {
