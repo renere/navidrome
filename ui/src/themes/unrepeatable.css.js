@@ -74,6 +74,14 @@ module.exports = `
     display: none;
 }
 
+.react-jinke-music-player-main .music-player-panel .panel-content .progress-bar-content .audio-title {
+    margin-top: 2.5px;
+}
+
+.react-jinke-music-player-main .music-player-panel .panel-content .img-content {
+    margin-top: 2.5px;
+}
+
 .sound-operation > div:nth-child(4) {
     transform: translateX(-50%) translateY(5%) !important;
 }
