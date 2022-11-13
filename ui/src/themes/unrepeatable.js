@@ -130,7 +130,6 @@ export default {
     MuiDrawer: {
       root: {
         background: '#2b3142',
-        paddingTop: '10px',
       },
     },
     MuiTableHead: {
@@ -173,8 +172,10 @@ export default {
     },
     MuiAppBar: {
       positionFixed: {
-        backgroundColor: '#2b3142 !important',
         boxShadow: 'none',
+      },
+      colorSecondary: {
+        backgroundColor: '#2b3142',
       },
     },
     MuiPaper: {
