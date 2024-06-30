@@ -1,14 +1,14 @@
 module.exports = `
 
 :root {
-    --lighter: #a6ccff;
-    --main: #0084ff;
-    --darker: #0062f6;
-    --main-background: #14172e;
-    --light-background: #181d37;
-    --lighter-background: #222541;
-    --background-highlight: #32375b;
-    --darker-background-highlight: #464b77;
+    --lighter: #aac6f8;
+    --main: #7aa0ec;
+    --darker: #5e80c5;
+    --main-background: #2b3142;
+    --light-background: #31374b;
+    --lighter-background: #363c52;
+    --background-highlight: #444d68;
+    --darker-background-highlight: #535e7e;
 }
 
 .react-jinke-music-player-main svg:active, .react-jinke-music-player-main svg:hover {
@@ -89,19 +89,7 @@ module.exports = `
 }
 
 .react-jinke-music-player-main .music-player-panel .panel-content .progress-bar-content .audio-main .current-time, .react-jinke-music-player-main .music-player-panel .panel-content .progress-bar-content .audio-main .duration {
-    /*display: none;*/
-    font-size: 0.675rem;
-    color: rgba(255, 255, 255, 0.8)
-}
-
-.react-jinke-music-player-main .music-player-panel .panel-content .progress-bar-content .audio-main .current-time::after {
-    content: "/";
-    display: ruby;
-    margin: 0 3px 0 3px;
-}
-
-.current-time {
-    flex-basis: unset !important;
+    display: none;
 }
 
 .react-jinke-music-player-main .music-player-panel .panel-content .progress-bar-content .audio-main {
@@ -169,13 +157,13 @@ module.exports = `
     margin: 3px;
 }
 
-/*.react-jinke-music-player-main .music-player-panel .panel-content .img-content {
+.react-jinke-music-player-main .music-player-panel .panel-content .img-content {
     border-radius: .5rem;
 }
 
 .react-jinke-music-player-main .music-player-panel .panel-content .img-rotate {
     animation: none;
-}*/
+}
 
 .NDAudioPlayer-player-6 .music-player-panel .panel-content div.img-rotate {
   background-size: cover !important;
@@ -192,6 +180,11 @@ module.exports = `
 
 .react-jinke-music-player-main .lyric-btn-active, .react-jinke-music-player-main .lyric-btn-active svg {
     color: var(--darker) !important;
+}
+
+/* Only works well when icons are replaced as in the Unrepeatable fork. */
+.react-jinke-music-player-main .music-player-panel .panel-content .player-content .next-audio svg, .react-jinke-music-player-main .music-player-panel .panel-content .player-content .prev-audio svg {
+    font-size: 30px;
 }
 
 .player-content > span:nth-child(1) {
@@ -229,7 +222,7 @@ module.exports = `
 
 .react-jinke-music-player-mobile-cover {
     border: none;
-    /*border-radius: 2.5rem;*/
+    border-radius: 2.5rem;
 }
 
 .react-jinke-music-player .music-player-controller {
