@@ -13,6 +13,11 @@ import { GlobalHotKeys } from 'react-hotkeys'
 import ReactJkMusicPlayer from 'navidrome-music-player'
 import 'navidrome-music-player/assets/index.css'
 import useCurrentTheme from '../themes/useCurrentTheme'
+import { FaPlay } from 'react-icons/fa'
+import { FaPause } from 'react-icons/fa'
+import { BsFillSkipStartFill } from 'react-icons/bs'
+import { BsSkipEndFill } from 'react-icons/bs'
+import { IoMdTrash } from 'react-icons/io'
 import config from '../config'
 import useStyle from './styles'
 import AudioTitle from './AudioTitle'
@@ -138,7 +143,7 @@ const Player = () => {
       clearPriorAudioLists: false,
       showDestroy: true,
       showDownload: false,
-      showLyric: true,
+      showLyric: false,
       showReload: false,
       toggleMode: !isDesktop,
       glassBg: false,
@@ -159,6 +164,13 @@ const Player = () => {
         />
       ),
       locale: locale(translate),
+      icon: {
+        play: <FaPlay />,
+        pause: <FaPause />,
+        prev: <BsFillSkipStartFill />,
+        next: <BsSkipEndFill />,
+        delete: <IoMdTrash />,
+      },
     }),
     [gainInfo, isDesktop, playerTheme, translate],
   )
